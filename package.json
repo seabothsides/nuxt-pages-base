@@ -21,6 +21,6 @@
     "prettier": "^2.1.2",
     "vue-template-compiler": "2.6.12",
     "vue": "2.6.12",
-    "webpack": "4.44.2"
+    "webpack": "5.7.0"
   }
 }
