@@ -2,21 +2,21 @@
 v-container
   v-row
     v-col.text-center.text-capitalize
-      p.text-h1.blue-grey--text {{ index.title }}
+      p.text-h2.blue-grey--text {{ about.title }}
   v-row
     v-col.text-center
-      p.body-1 {{ index.description }}
+      p.body-2 {{ about.description }}
   v-row
     v-col
-      nuxt-content(:document='index')
+      nuxt-content(:document='about')
 </template>
 
 <script>
 export default {
   async asyncData({ $content }) {
-    const index = await $content('index').fetch()
+    const about = await $content('pages/about').fetch()
 
-    return { index }
+    return { about }
   },
 }
 </script>
